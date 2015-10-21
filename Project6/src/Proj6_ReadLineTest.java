@@ -30,7 +30,7 @@ public class Proj6_ReadLineTest {
 				System.out.println("ERROR! You must include a space.");
 				continue;
 			}
-			// get space's index in string
+			// get space char's index in string
 			int spaceIndex = stringLine.indexOf(" ");
 			// output first word and second word
 			System.out.println(stringLine.substring(0, spaceIndex));

@@ -11,7 +11,7 @@
  * The program read user's input after the string splits two words. 
  * The first word is color, and the second word is a graph. 
  * Using two words to create a graph, such as, user input "red circle", 
- * the string as a command to control computer to draw a red of circle.
+ * the string as a command to control color and shape to draw a red of circle.
  */
 import java.util.Scanner;
 
@@ -35,7 +35,7 @@ public class Proj6_InteractiveDraw {
 				System.out.println("ERROR! You must include a space.");
 				continue;
 			}
-			// get space's index in string
+			// get space char's index in string
 			int spaceIndex = stringLine.indexOf(" ");
 			// output first word and second word
 			System.out.println(stringLine.substring(0, spaceIndex));
@@ -45,7 +45,7 @@ public class Proj6_InteractiveDraw {
 			String color = stringLine.substring(0, spaceIndex);
 			String shape = stringLine.substring(spaceIndex + 1);
 
-			// judge color
+			// judge color and shape
 			if (color.equals("red")) {
 				StdDraw.setPenColor(StdDraw.RED);
 				drawShap(shape);
