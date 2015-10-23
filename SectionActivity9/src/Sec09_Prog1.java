@@ -2,15 +2,24 @@
 public class Sec09_Prog1 {
 
 	public static void main(String[] args) {
+		int a = add(999999, 1);
+		int b = add(100, 1);
+		int c = add(9999, 1);
+		int e = add(10, 1);
 
-		int a = add(10, 100);
-		int b = mul(10, 100);
-		int c = add(10, 20);
-		int d = mul(10, 10);
-		int e = add(10,2222);
-		int f = add(90, 10);
-		int g = mul(102,23);
-		int h = mul(10,22222);
+		int f = mul(-999999, 1);
+		int g = mul(1000, 1);
+		int h = mul(9999, 1);
+		int i = mul(10, 1);
+
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		System.out.println(e);
+		System.out.println(f);
+		System.out.println(g);
+		System.out.println(h);
+		System.out.println(i);
 	}
 
 	public static int add(int a, int b) {

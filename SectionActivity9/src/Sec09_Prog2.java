@@ -2,31 +2,32 @@
 public class Sec09_Prog2 {
 
 	public static void main(String[] args) {
-
 		int[] arrayOfNumbers = { 1, 3, 5, 7, 5, 3, 1 };
-		for (int i = 0; i < 7; i++) {
-			printStars(arrayOfNumbers[i], true);
+		for (int x = 0; x < 7; x++) {
+			printStars(arrayOfNumbers[x], true);
 		}
 
-		
-		for (int i = 0; i < 6; i++) {
-			for (int j = 4 - i; j >= 0; j--) {
+		int[] arrayOfNumbersTwo = { 5, 4, 3, 2, 1, 0 };
+		int x = 1;
+		for (int y = 0; y < 6; y++) {
+			for (int z = 0; z < arrayOfNumbersTwo[y]; z++) {
 				System.out.print(" ");
 			}
-
-			printStars(i + 2, true);
+			printStars(x, true);
+			x += 2;
 		}
-
 	}
 
-	public static void printStars(int count, boolean addNewline) {
-
+	public static void printStars(int count, boolean addNewLine) {
+		String asterisks = "";
 		for (int i = 0; i < count; i++) {
-			System.out.print("*");
+			asterisks += "*";
 		}
-		if (addNewline) {
+
+		System.out.print(asterisks);
+		if (addNewLine == true) {
 			System.out.print("\n");
 		}
-
 	}
+
 }
