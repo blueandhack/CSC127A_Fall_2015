@@ -1,12 +1,11 @@
-import java.awt.Color;
 
-public class Sec10_prog1 {
+public class Sec10_prog3 {
 	public static void main(String[] args) {
 		// these are the 4 arrays that we will plot out
-		double[] array1 = { 10, 20, 30, 40, 50, 60 };
+		double[] array1 = { 10, 20 };
 		double[] array2 = { 10, 5, 30, 5, 50, 5 };
-		double[] array3 = { 90, 70, 50, 30, 10, 5 };
-		double[] array4 = { 10, 10, 10, 40, 40, 40 };
+		double[] array3 = { 90, 80, 70, 60, 50, 40, 30, 20, 10, 5 };
+		double[] array4 = { 10, 10, 10, 5, 5, 5, 40, 40, 40 };
 
 		// initialize StdDraw. The version of barGraph() that we use
 		// in this section always draws a graph which takes up 100x100,
@@ -14,6 +13,8 @@ public class Sec10_prog1 {
 		// them.
 		StdDraw.setScale(-100, 100);
 		StdDraw.clear();
+		StdDraw.line(-100, 0, 100, 0);
+		StdDraw.line(0, 100, 0, -100);
 
 		// each call to this method should draw a single bar graph
 		barGraph(array1, -100, 0);
@@ -22,15 +23,21 @@ public class Sec10_prog1 {
 		barGraph(array4, 0, -100);
 	}
 
-	// TODO: declare the barGraph() method here
-
 	public static void barGraph(double[] array, int x, int y) {
-		Color[] color = { Color.red, Color.green, Color.blue, Color.black, Color.pink };
-		for (int i = 0; i < color.length; i++) {
-			StdDraw.setPenColor(color[i]);
-			StdDraw.filledRectangle(x, y + array[i] / 2, 5, array[i] / 2);
-			x = x + 18;
+
+		double halfWidth = 80 / array.length / 2;
+		double xCenter = x + 20 / array.length + halfWidth;
+
+		int a = 255 / array.length;
+		int r = 0;
+		int b = 255;
+		for (int i = 0; i < array.length; i++) {
+			StdDraw.setPenColor(r, 0, b);
+			r += a;
+			b -= a;
+			StdDraw.filledRectangle(xCenter, y + array[i] / 2, halfWidth, array[i] / 2);
+			xCenter = xCenter + halfWidth * 2 + 20 / array.length;
+
 		}
 	}
-
 }

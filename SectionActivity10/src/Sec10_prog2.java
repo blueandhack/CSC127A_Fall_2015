@@ -1,18 +1,3 @@
-import java.awt.Color;
-
-/* Sec10_prog2
- *
- * CSc 127A Fall 15, Section Activity 10
- *
- * Author:  Russell Lewis
- * SL Name: n/a
- *
- * ---
- *
- * This program draws 4 bar graphs, by taking thecode from Section 3, and
- * generalizes it into a method.
- */
-
 public class Sec10_prog2 {
 	public static void main(String[] args) {
 		// these are the 4 arrays that we will plot out
@@ -25,7 +10,7 @@ public class Sec10_prog2 {
 		// in this section always draws a graph which takes up 100x100,
 		// so we allocate a 200x200 graph, large enough for four of
 		// them.
-		StdDraw.setScale(-200, 200);
+		StdDraw.setScale(-100, 100);
 		StdDraw.clear();
 
 		// each call to this method should draw a single bar graph
@@ -36,15 +21,15 @@ public class Sec10_prog2 {
 	}
 
 	public static void barGraph(double[] array, int x, int y) {
-		double xCenter = x + 30 / array.length;
 
-		double halfWidth = 70 / array.length / 2;
+		double halfWidth = 80 / array.length / 2;
+		double xCenter = x + 20 / array.length + halfWidth;
 
 		for (int i = 0; i < array.length; i++) {
-			System.out.println(xCenter);
 			StdDraw.setPenColor(StdDraw.BLACK);
 			StdDraw.filledRectangle(xCenter, y + array[i] / 2, halfWidth, array[i] / 2);
-			xCenter = xCenter + halfWidth * 2 + 30 / array.length;
+			xCenter = xCenter + halfWidth * 2 + 20 / array.length;
+
 		}
 	}
 }
