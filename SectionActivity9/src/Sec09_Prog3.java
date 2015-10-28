@@ -29,11 +29,11 @@ public class Sec09_Prog3 {
 		int[] arrayOfNumbersTwo = { 5, 4, 3, 2, 1, 0 };
 		int x = 1;
 		for (int y = 0; y < 6; y++) {
-			for (int z = 0; z < arrayOfNumbersTwo[y]; z++) {
-				System.out.print(" ");
-			}
+			
+			printRepeated(arrayOfNumbersTwo[y], false, ' ');
 			printRepeated(x, true, '1');
 			x += 2;
+			
 		}
 	}
 
