@@ -27,6 +27,8 @@ public class Sec11_Pro2 {
 			}
 		}
 
+		in.close();
+
 	}
 
 	public static int[] arrayAppend(int[] array, int newElement) {

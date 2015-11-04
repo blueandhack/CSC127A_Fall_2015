@@ -18,6 +18,8 @@ public class Sec11_Pro1 {
 			a = arrayAppend(a, b);
 			dumpArray(a);
 		}
+		
+		in.close();
 
 	}
 
