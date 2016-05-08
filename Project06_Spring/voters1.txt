@@ -1,0 +1,14 @@
+Gorilla Leopard Tiger Turtle Owl
+
+red_squirrel  Turtle  Owl     Gorilla Tiger   Leopard
+fox           Leopard Tiger   Gorilla Owl     Turtle
+wolf          Leopard Gorilla Turtle  Owl     Tiger
+hyena         Gorilla Turtle  Owl     Leopard Tiger
+baboon        Gorilla Owl     Leopard Tiger   Turtle
+puffin        Owl     Turtle  Gorilla Tiger   Leopard
+shrew         Leopard Turtle  Gorilla Tiger   Owl
+frog          Gorilla Tiger   Leopard Owl     Turtle
+gray_squirrel Gorilla Leopard Turtle  Owl     Tiger
+pig           Gorilla Turtle  Owl     Leopard Tiger
+ocelot        Leopard Tiger   Gorilla Turtle  Owl
+rodent        Owl     Tiger   Leopard Turtle  Gorilla

@@ -1,0 +1,14 @@
+Baseball Basketball Football Soccer League_of_Legends
+
+Abigail   Baseball          Football          League_of_Legends Soccer Basketball
+Alex      Football          Baseball          Soccer            League_of_Legends Basketball
+Timothy   Baseball          Football          Basketball        Soccer            League_of_Legends
+Zachary   Basketball        League_of_Legends Football          Soccer            Baseball
+Sujan     Football          Basketball        Soccer            League_of_Legends Baseball
+Sarina    Football          Basketball        Soccer            Baseball          League_of_Legends
+Allan     Football          Soccer            Basketball        League_of_Legends Baseball
+Robert    Baseball          League_of_Legends Basketball        Soccer            Football
+Kyle      Soccer            Baseball          Basketball        Football          League_of_Legends
+David     League_of_Legends Soccer            Baseball          Football          Basketball
+Theo      Football          League_of_Legends Baseball          Basketball        Soccer
+Cody      Football          Soccer            Baseball          League_of_Legends Basketball
